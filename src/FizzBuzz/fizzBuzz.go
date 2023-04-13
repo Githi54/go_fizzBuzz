@@ -21,5 +21,5 @@ func fizzBuzz(start, end, firstDivisor, secondDivisor int) string {
 		}
 	}
 
-	return result.String()
+	return strings.Trim(result.String(), " ")
 }
