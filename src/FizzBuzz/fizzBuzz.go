@@ -9,7 +9,7 @@ func fizzBuzz(start, end, firstDivisor, secondDivisor int) string {
 	var result strings.Builder
 
 	for i := start; i <= end; i++ {
-		if i % (firstDivisor * secondDivisor) == 0 {
+		if i % firstDivisor == 0 && i % secondDivisor == 0 {
 			result.WriteString("FizzBuzz ")
 		} else if i % firstDivisor == 0 {
 			result.WriteString("Fizz ")
